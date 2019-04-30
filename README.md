@@ -8,9 +8,23 @@ The Spaceball is an apparatus that mimics a sphere where a person will be seated
 <img src="Picture1.png" align="center" width="350">
 </p>
 
+## Table of Contents
+[Hardware](#hardware)
+<a name="hardware"/> <br/>
+[Pneumatic System](#pneumatic-system)
+<a name="pneumetic-system"/> <br/>
+[Control System](#control-system)
+<a name="control-system"/> <br/>
+[Software](#software)
+<a name="software"/> <br/>
+
+
+## Associated Repositories
+[1. Virtual Reality Software Code](https://github.com/GxRay/Trunk-Rehabilitation-VR-Training-Simulator-/tree/testEnv) <br/>
+[2. Wearable Aquisition Belt Code](https://github.com/GxRay/VR-EMGAccel-Arduino)<br/>
 ## Hardware
 
-### Pnematic System
+### Pneumatic System
 
 The primary source for the pneumatic control system will be provided by a Mastercraft air compressor. The air compressor will have two hoses connected to the air outlet using a T-splitter. Brass hose fittings will need to be purchased and inserted into the solenoids to allow for the hose connection. The hoses will connect to the fittings attached to the 12V in and out pneumatic solenoid air valves.  Two hoses will connect to two solenoid valves, to control the pitch degree of freedom. The valves will control air flowing into it for the movement of the left and right directions of the pitch degree of freedom. Two more hoses will connect to two more solenoid valves to control the roll degree of freedom. The valve will control the air flowing into it for the movement of the forward and backward directions of the roll degree of freedom. 
 The Adafruit HUZZAH ESP32 Feather Microcontroller is used to control the pneumatic system to allow for the Spaceball to move automatically based on how the board is programmed. This is done from air passing through the hoses into the solenoid air valves. The air valves, when programmed by the board will allow the air to pass depending on how the user wants to manipulate the Spaceball.  The valve will open on one side to move the Spaceball left. When the other side of the valve opens and air passes through the Spaceball will move right. The same will happen for the forward and backward directions when air passes through the different sides of the second solenoid valve. The Spaceball also has a manual mechanism to rotate in both directions using a wheel located on the side of the Spaceball. The Microcontroller will move the Spaceball positioning based on both the accelerometer placed on the person and the Virtual Reality Biofeedback system. The initial position of the Spaceball will be determined by the accelerometer place on the user. The virtual reality biofeedback system will determine how the Spaceball moves next. 
